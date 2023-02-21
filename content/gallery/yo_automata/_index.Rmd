@@ -1,0 +1,45 @@
+---
+output: hugodown::md_document
+title: "Yo automata"
+date: 2022-06-09
+trailer: "gallery/yo_automata/preview/14427-0083.png"
+splash:
+  image: "./image/14427-0083.png"
+  caption: "Yo automata"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Yo automata](https://www.fxhash.xyz/generative/14427)
+
+i found a single seashell alone in outer space
+engraved with ancient language
+i climbed into the wash of its vacuum
+rest my head against the smooth inner wall
+closed my eyes, let it drift towards so much nothing
+a billion years of starlight warmed my blood
+and this is how i learned to love, upon the letting go
+
+<br>
+Features:
+<ul>
+<li>Palette</li>
+<li>States</li>
+<li>Threshold</li>
+<li>Range</li>
+<li>DetailLevel</li>
+<li>DrawingCombo</li>
+<li>MaxIterations</li></ul>
+
+Artwork by @cristianrohr (2022).
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

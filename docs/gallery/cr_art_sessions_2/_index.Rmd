@@ -1,0 +1,49 @@
+---
+output: hugodown::md_document
+title: "CR Art Sessions //2"
+date: 2022-12-08
+trailer: "gallery/cr_art_sessions_2/preview/22260-0197.png"
+splash:
+  image: "./image/22260-0197.png"
+  caption: "CR Art Sessions //2"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[CR Art Sessions //2](https://www.fxhash.xyz/generative/22260)
+
+Grayscale, Hold the Line, and Mondrian walk into a bar. The bartender looks up and says, "What is this, some kind of art project?"
+
+Grayscale responds, "No, we're just here for a drink."
+
+Hold the Line adds, "But we can definitely add some color to the place if you want."
+
+Mondrian chimes in, "I prefer to keep things simple and stick to the basics."
+
+The bartender shakes his head and says, "I'll be the judge of that. What can I get you all?"
+
+Grayscale orders a Guinness, Hold the Line asks for a gin and tonic, and Mondrian asks for a glass of white wine.
+
+The bartender serves up the drinks and says, "That will be $15.50, please."
+
+Grayscale pulls out a twenty-dollar bill and hands it to the bartender, saying, "Keep the change."
+
+The bartender thanks him and says, "Thanks, Grayscale. You always know how to liven up the place."
+
+Hold the Line raises his glass and says, "Cheers to that!"
+
+Mondrian nods and clinks glasses with the others, and the three of them enjoy their drinks and the rest of their evening at the bar.
+
+
+Artwork by @cristianrohr (2022)
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

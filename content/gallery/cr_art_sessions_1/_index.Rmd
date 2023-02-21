@@ -1,0 +1,26 @@
+---
+output: hugodown::md_document
+title: "CR Art Sessions //1"
+date: 2022-06-16
+trailer: "gallery/cr_art_sessions_1/preview/14954-0056.png"
+splash:
+  image: "./image/14954-0056.png"
+  caption: "CR Art Sessions //1"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[CR Art Sessions //1](https://www.fxhash.xyz/generative/14954)
+
+Artwork by @cristianrohr (2022).
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

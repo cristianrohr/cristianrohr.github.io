@@ -1,0 +1,39 @@
+---
+output: hugodown::md_document
+title: "Isomeric Doppelgangers"
+date: 2022-05-28
+trailer: "gallery/isomeric/preview/13745-0011.png"
+splash:
+  image: "./image/13745-0011.png"
+  caption: "Isomeric Doppelgangers"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Isomeric doppelgangers](https://www.fxhash.xyz/generative/slug/isomeric-doppelgangers)
+
+Spatial isomerism, is a form of isomerism in which molecules have the same molecular formula and sequence of bonded atoms (constitution), but differ in the three-dimensional orientations of their atoms in space.
+
+This artworks flips several boxes on the X or Y axis, resulting in two gemelar images, each with the same palette but a different color mix. The perception of diverse scenes is based only on these modifications.
+
+The collection is limited to 100 works of art.
+
+<br>
+Features:
+
+<ul>
+<li>Palette: coral, gray, retro, vrolik3, origami, sooph, jfa, bell</li>
+<li>Zoom: low, medium, high, random</li>
+<li>Orientation: portrait, vertical</li>
+<li>Fill: true, false</li>
+</ul>
+Made with P5js and <3.
+
+</div>
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

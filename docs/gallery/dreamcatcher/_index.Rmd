@@ -1,0 +1,20 @@
+---
+output: hugodown::md_document
+title: "Dreamcatcher"
+date: 2022-04-02
+trailer: "gallery/dreamcatcher/preview/b_661223.jpg"
+splash:
+  image: "./image/b_661223.jpg"
+  caption: "Dreamcatcher"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+Generative dreamcatchers.
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "jpg", full_fmt = "jpg")
+```

@@ -1,0 +1,37 @@
+---
+output: hugodown::md_document
+title: "Geoetris"
+date: 2022-05-22
+trailer: "gallery/geoetris/preview/13194-0002.png"
+splash:
+  image: "./image/13194-0002.png"
+  caption: "Geoetris"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+[Geoetris](https://www.fxhash.xyz/generative/slug/geoetris)
+
+<div>
+In 'Geoetris', the random mixture of simple geometric forms and vibrant colour palettes converge towards an artistic manifestation of geometric abstraction.
+
+The collection is limited to 161 works of art, the first three digits of the golden ratio, a number often encountered when taking the ratios of distances in geometric figures.
+
+<br>
+
+Features:
+<ul><li>Palette: dark1, dark2, dark3, vrolik1, vrolik2, retro1, retro2, origami, magma, jungle, lava, tuscany</li>
+<li>Background: derived from the palette</li>
+<li>Partitions: partitions</li>
+<li>Noisy: true, false</li></ul>
+
+Made with P5js and <3.
+
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

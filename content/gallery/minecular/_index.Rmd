@@ -1,0 +1,18 @@
+---
+output: hugodown::md_document
+title: "Minecular"
+date: 2022-04-05
+trailer: "gallery/minecular/preview/plot_black_541_541_tokyo.jpg"
+splash:
+  image: "./image/plot_black_541_541_tokyo.jpg"
+  caption: "Minecular"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "jpg", full_fmt = "jpg")
+```

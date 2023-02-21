@@ -1,0 +1,39 @@
+---
+output: hugodown::md_document
+title: "Chimalmat Relics"
+date: 2022-09-10
+trailer: "gallery/chimalmat/preview/19275-0035.png"
+splash:
+  image: "./image/19275-0035.png"
+  caption: "Chimalmat Relics"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Chimalmat Relics](https://www.fxhash.xyz/generative/19275)
+
+'Chimalmat Relics' is a generative art project that pays homage to the great American civilizations (such as the Aztecs, the Mayans and the Incas).
+
+Each piece of the project has 4 stages.
+
+The first is the expansion, the flourishing, the formation of the cities. In this stage each work begins to grow. The lines evoke the complexity of the cultures and how they progressed, occupying more land, becoming more intricate, complex, beautiful and elaborate. The circles represent the individuals of these cultures, they are large because they represent the greatness of these individuals. The squares represent the temples, so important to these societies.
+
+The next stage is maturation, it is when lines begin to appear in the background that cover the entire piece and represent the acquired knowledge and wisdom of these cultures, their knowledge of nature, the stars, their art.
+
+The third stage is decadence, we already know what happened to these civilizations, so this stage enters like a wave from the left that sweeps everything away, erases and blurs the work, the history. It represents the conquest.
+
+The last stage represents history, memory, what survives today, what we can reconstruct, infer, yearn for those times, there is much that was lost, but the essence remains, it is still there. It allows us and obliges us in a certain way to contemplate and appreciate it.
+
+
+Artwork by @cristianrohr (2022).
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

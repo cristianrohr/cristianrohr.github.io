@@ -1,0 +1,33 @@
+---
+output: hugodown::md_document
+title: "Hold the line"
+date: 2022-10-22
+trailer: "gallery/hold_the_line/preview/20554-0029.png"
+splash:
+  image: "./image/20554-0029.png"
+  caption: "Hold the line"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Hold the line](https://www.fxhash.xyz/generative/20554)
+
+This generative art project is made with p5js.
+
+Every form in this project is derived from a line since the sole 2D primitive used is the "line" function.
+
+This appears to be a lie when you look at the possible results because you can see rectangles, squares, ellipses, circles, etc. The strokecap, canvas drawingContext "white magic", and spatial logic for translations, rotations, etc. are used to achieve this.
+
+Also this project made extensive use of color gradients and alpha, in fact is my first project using the HSB color mode. I encourage you to focus on the more obvious or subtle elements in some outputs.
+
+Cristian Rohr 2022 - Made with p5js
+
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

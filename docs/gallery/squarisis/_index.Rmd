@@ -1,0 +1,20 @@
+---
+output: hugodown::md_document
+title: "Squarisis"
+date: 2022-04-04
+trailer: "gallery/squarisis/preview/elastic-in_interpolate_squares.jpg"
+splash:
+  image: "./image/elastic-in_interpolate_squares.jpg"
+  caption: "Squarisis"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+Experimenting tween functions
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "jpg", full_fmt = "jpg")
+```

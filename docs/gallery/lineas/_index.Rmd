@@ -1,0 +1,45 @@
+---
+output: hugodown::md_document
+title: "Lineas"
+date: 2022-08-14
+trailer: "gallery/lineas/preview/18115-0114.png"
+splash:
+  image: "./image/18115-0114.png"
+  caption: "Lineas"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Lineas](https://www.fxhash.xyz/generative/18115)
+
+Búscame entre mis letras por que en ellas siempre voy a estar
+y en los versos de mis poemas mi corazón escucharás...
+
+Lee cada palabra que encuentres donde quieres buscar
+esas que ya conoces y que además te hacen extrañar.
+Si te emocionan sueña siempre con algo más, no llores
+por que existe un camino donde las letras tienen su punto y final.
+
+El amor es un poema o un milagro terrenal, es la magia
+que nos envuelve a los que nos podemos enamorar.
+Amar cuesta y cuando se ama duele, se sufre, se llora
+por el ser amado, eso es lo que tu alma atesora.
+
+Cada verso que escribo lleva en su contenido un significado,
+una promesa, un abrazo entre líneas y un beso de enamorado...
+
+AMOR ENTRE LÍNEAS.
+poema de De Lorenzo Román.
+
+Artwork by @cristianrohr (2022).
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```

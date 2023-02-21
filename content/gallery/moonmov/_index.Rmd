@@ -1,0 +1,20 @@
+---
+output: hugodown::md_document
+title: "Moonmov"
+date: 2022-04-03
+trailer: "gallery/moonmov/preview/mm_23371302_049.jpg"
+splash:
+  image: "./image/mm_23371302_049.jpg"
+  caption: "Moonmov"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+To see the moon in the same phase twice, you need to wait about 29.53059 days -- or 29 days, 12 hours, 44 minutes and 3 seconds. This cycle is called the synodic month, and the ancient Maya studied it. (It's possible they also tracked how long it took for the moon to reach the same stars it had already passed -- this is called the sidereal cycle.) 
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "jpg", full_fmt = "jpg")
+```
