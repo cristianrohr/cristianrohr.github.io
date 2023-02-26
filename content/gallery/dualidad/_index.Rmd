@@ -1,0 +1,32 @@
+---
+output: hugodown::md_document
+title: "Dualidad"
+date: 2023-01-14
+trailer: "gallery/dualidad/preview/23695-0045.png"
+splash:
+  image: "./image/23695-0045.png"
+  caption: "Dualidad"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Dualidad](https://www.fxhash.xyz/generative/23695)
+
+The concept of 'Dualidad' (duality) is brought to life through the use of opposing elements, circles, and rectangles, in the artwork.
+
+The circles, like the stillness of a calm pond, remain in close places while they continuously transform. In contrast, the rectangles are a representation of movement and change, constantly traveling across the canvas.
+
+This balance of opposing elements creates a dynamic tension that draws the viewer in, leaving them mesmerized by the ever-evolving artwork. Expect to see a range of emotions, from the euphoria of joy to the depth of sorrow, as you explore the duality of this project.
+
+Artwork by @cristianrohr (2023)
+
+Made with P5js and <3.
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```
