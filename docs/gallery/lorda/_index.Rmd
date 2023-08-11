@@ -1,0 +1,35 @@
+---
+output: hugodown::md_document
+title: "Lorda"
+date: 2023-01-14
+trailer: "gallery/lorda/preview/25540-0073.png"
+splash:
+  image: "./image/25540-0073.png"
+  caption: "Lorda"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+<div>
+[Lorda](https://www.fxhash.xyz/generative/25540)
+
+Argentina is world-renowned for its exquisite wine, and the Malbec grape has long been a celebrated variety. While most of the country’s wine comes from the region of Cuyo, specifically the province of Mendoza, there is another hidden gem that is often overlooked: Entre Rios.
+
+Named after the two massive rivers that surround it, Entre Rios is a province located in the northeast of Argentina. What many people don’t know is that it boasts a long and fascinating history of wine production that dates back to the early 19th century.
+
+During a recent visit to Entre Rios, I had the pleasure of exploring a small vineyard located near the Parana river. As I walked among the vines, I couldn’t help but feel inspired by their vibrant colors, intricate patterns of the leaves, and the beautiful clusters of grapes. It was clear to me that there was something truly special about the vineyards of Entre Rios.
+
+As I delved deeper into the region’s history, I discovered that until 1937, Entre Rios was one of the largest wine producers in the country, with over 60 vineyards operating in the province. However, a national law was passed that year creating the Regulating Board of Wine, which concentrated and granted exclusivity to wine production in Cuyo. It wasn’t until 1993 that the law was repealed, allowing vineyards to be planted and modified throughout the country.
+
+Today, Entre Rios is home to a small but thriving wine industry that is known for its unique blends and varietals. One of the most notable grapes is the Tannat, which was once the predominant variety in the region.
+
+Inspired by the beauty of these vineyards, I decided to create a generative art collection that celebrates the colors, shapes, and textures of the grapes and vines called ‘Lorda’.
+
+</div>
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png", full_fmt = "png")
+```
